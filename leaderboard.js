@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const tableBody = document.getElementById("leaderboard-data");
 
+  // Populate table with data
   leaderboardData.forEach((student) => {
     const row = document.createElement("tr");
     row.innerHTML = `
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     tableBody.appendChild(row);
   });
 
+  // Back button functionality
   const backButton = document.getElementById("back-button");
   backButton.addEventListener("click", () => {
     window.location.href = "dashboard.html";
