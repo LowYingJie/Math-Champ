@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Math Champ - Homepage</title>
+  <title>Math Champ - Dashboard</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -24,7 +24,7 @@
     header h1 {
       font-size: 2.5rem;
     }
-    .classes-container {
+    .dashboard-container {
       margin-top: 2rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -32,7 +32,7 @@
       max-width: 600px;
       width: 100%;
     }
-    .class-card {
+    .dashboard-card {
       background: white;
       color: #333;
       padding: 1rem;
@@ -43,7 +43,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s, box-shadow 0.3s;
     }
-    .class-card:hover {
+    .dashboard-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
@@ -67,20 +67,20 @@
 <body>
   <header>
     <h1>Welcome to Math Champ</h1>
-    <p>Select your class</p>
+    <p>Select a class to view details</p>
   </header>
-  <div class="classes-container">
-    <div class="class-card" data-class="1A">Class 1A</div>
-    <div class="class-card" data-class="1B">Class 1B</div>
-    <div class="class-card" data-class="1C">Class 1C</div>
-    <div class="class-card" data-class="2A">Class 2A</div>
-    <div class="class-card" data-class="2B">Class 2B</div>
-    <div class="class-card" data-class="2C">Class 2C</div>
-    <div class="class-card" data-class="3A">Class 3A</div>
-    <div class="class-card" data-class="3B">Class 3B</div>
-    <div class="class-card" data-class="3C">Class 3C</div>
+  <div class="dashboard-container">
+    <div class="dashboard-card" data-class="1A">Class 1A</div>
+    <div class="dashboard-card" data-class="1B">Class 1B</div>
+    <div class="dashboard-card" data-class="1C">Class 1C</div>
+    <div class="dashboard-card" data-class="2A">Class 2A</div>
+    <div class="dashboard-card" data-class="2B">Class 2B</div>
+    <div class="dashboard-card" data-class="2C">Class 2C</div>
+    <div class="dashboard-card" data-class="3A">Class 3A</div>
+    <div class="dashboard-card" data-class="3B">Class 3B</div>
+    <div class="dashboard-card" data-class="3C">Class 3C</div>
   </div>
   <button class="logout-button" id="logout-button">Logout</button>
-  <script src="homepage.js"></script>
+  <script src="dashboard.js"></script>
 </body>
 </html>
