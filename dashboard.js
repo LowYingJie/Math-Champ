@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const classCards = document.querySelectorAll(".class-card");
+  const classCards = document.querySelectorAll(".dashboard-card");
   const logoutButton = document.getElementById("logout-button");
 
   // Handle class selection
