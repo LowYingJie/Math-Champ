@@ -45,6 +45,11 @@
     tr:last-child td {
       border-bottom: none;
     }
+    #no-data-row {
+      text-align: center;
+      color: #666;
+      font-style: italic;
+    }
     button {
       margin-top: 2rem;
       padding: 0.8rem 1.5rem;
@@ -64,7 +69,7 @@
 </head>
 <body>
   <header>
-    <h1>Leaderboard - Class 2A</h1>
+    <h1>Leaderboard - <span id="class-name">Class 2A</span></h1>
     <p>View the top students' rankings</p>
   </header>
   <table>
@@ -79,9 +84,30 @@
     </thead>
     <tbody id="leaderboard-data">
       <!-- Data will be populated by leaderboard.js -->
+      <tr>
+        <td>1</td>
+        <td>Ahmad Faris</td>
+        <td>0473A574210289</td>
+        <td>100%</td>
+        <td>2025-01-13</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jason Tan</td>
+        <td>04839D40210289</td>
+        <td>0%</td>
+        <td>2025-01-13</td>
+      </tr>
     </tbody>
   </table>
   <button id="back-button">Back to Dashboard</button>
-  <script src="leaderboard.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const backButton = document.getElementById("back-button");
+      backButton.addEventListener("click", () => {
+        window.location.href = "dashboard.html";
+      });
+    });
+  </script>
 </body>
 </html>
