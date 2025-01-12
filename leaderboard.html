@@ -45,11 +45,6 @@
     tr:last-child td {
       border-bottom: none;
     }
-    #no-data-row {
-      text-align: center;
-      color: #666;
-      font-style: italic;
-    }
     button {
       margin-top: 2rem;
       padding: 0.8rem 1.5rem;
@@ -69,7 +64,7 @@
 </head>
 <body>
   <header>
-    <h1>Leaderboard - <span id="class-name">Class 2A</span></h1>
+    <h1>Leaderboard - Class 2A</h1>
     <p>View the top students' rankings</p>
   </header>
   <table>
@@ -83,9 +78,7 @@
       </tr>
     </thead>
     <tbody id="leaderboard-data">
-      <tr id="no-data-row" style="display: none;">
-        <td colspan="5">No data available for this class.</td>
-      </tr>
+      <!-- Data will be populated by leaderboard.js -->
     </tbody>
   </table>
   <button id="back-button">Back to Dashboard</button>
