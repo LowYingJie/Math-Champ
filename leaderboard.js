@@ -4,15 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
       rank: 1,
       name: "Ahmad Faris",
       id: "0473A574210289",
-      correctRate: "90%",
-      date: "2025-01-10"
+      correctRate: "100%",
+      date: "2025-01-13"
     },
     {
       rank: 2,
       name: "Jason Tan",
       id: "04839D40210289",
-      correctRate: "80%",
-      date: "2025-01-10"
+      correctRate: "0%",
+      date: "2025-01-13"
     }
   ];
 
