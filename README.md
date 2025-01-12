@@ -1,4 +1,4 @@
 # Math-Champ
 
 Tryout our Website:
-#https://lowyingjie.github.io/Math-Champ/
+https://lowyingjie.github.io/Math-Champ/
