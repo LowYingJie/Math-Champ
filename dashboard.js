@@ -6,15 +6,16 @@ document.addEventListener("DOMContentLoaded", () => {
   classCards.forEach(card => {
     card.addEventListener("click", () => {
       const selectedClass = card.dataset.class;
-      alert(`You selected ${selectedClass}`);
-      // Redirect or perform action based on selected class
-      // Example: window.location.href = `${selectedClass}.html`;
+      if (selectedClass === "2A") {
+        window.location.href = "leaderboard.html?class=2A";
+      } else {
+        alert(`No data available for ${selectedClass}`);
+      }
     });
   });
 
   // Handle Logout
   logoutButton.addEventListener("click", () => {
-    // Mock logout process (clear session storage or cookies if implemented)
     alert("You have been logged out.");
     window.location.href = "index.html"; // Redirect to login page
   });
