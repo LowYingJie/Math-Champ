@@ -3,71 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Class Selection - MathChamp</title>
+  <title>Math Champ - Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       margin: 0;
-      background: linear-gradient(to right, #ff7e5f, #feb47b);
-    }
-    .box {
-      background: #fff;
-      padding: 40px 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      text-align: center;
-      max-width: 400px;
-      width: 100%;
-    }
-    .box h2 {
-      font-size: 28px;
-      color: #333;
-      margin-bottom: 20px;
-    }
-    .class-list {
-      list-style: none;
       padding: 0;
-      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(135deg, #2575fc, #6a11cb);
+      min-height: 100vh;
+      color: white;
     }
-    .class-list li {
-      margin: 10px 0;
+    header {
+      text-align: center;
+      margin-top: 1rem;
     }
-    .class-list button {
+    header h1 {
+      font-size: 2.5rem;
+    }
+    .classes-container {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      max-width: 600px;
       width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      border: none;
-      border-radius: 5px;
+    }
+    .class-card {
+      background: white;
+      color: #333;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
       cursor: pointer;
-      background: #007bff;
-      color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .class-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .logout-button {
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background: #ff6b6b;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
       transition: background 0.3s;
     }
-    .class-list button:hover {
-      background: #0056b3;
+    .logout-button:hover {
+      background: #d9534f;
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h2>Select Your Class</h2>
-    <ul class="class-list">
-      <li><button data-class="1A">Class 1A</button></li>
-      <li><button data-class="1B">Class 1B</button></li>
-      <li><button data-class="2A">Class 2A</button></li>
-      <li><button data-class="2B">Class 2B</button></li>
-      <li><button data-class="3A">Class 3A</button></li>
-      <li><button data-class="3B">Class 3B</button></li>
-      <li><button data-class="4A">Class 4A</button></li>
-      <li><button data-class="4B">Class 4B</button></li>
-      <li><button data-class="5A">Class 5A</button></li>
-      <li><button data-class="5B">Class 5B</button></li>
-    </ul>
+  <header>
+    <h1>Welcome to Math Champ</h1>
+    <p>Select your class</p>
+  </header>
+  <div class="classes-container">
+    <div class="class-card" data-class="1A">Class 1A</div>
+    <div class="class-card" data-class="1B">Class 1B</div>
+    <div class="class-card" data-class="1C">Class 1C</div>
+    <div class="class-card" data-class="2A">Class 2A</div>
+    <div class="class-card" data-class="2B">Class 2B</div>
+    <div class="class-card" data-class="2C">Class 2C</div>
+    <div class="class-card" data-class="3A">Class 3A</div>
+    <div class="class-card" data-class="3B">Class 3B</div>
+    <div class="class-card" data-class="3C">Class 3C</div>
   </div>
-  <script type="module" src="homepage.js"></script>
+  <button class="logout-button" id="logout-button">Logout</button>
+  <script src="homepage.js"></script>
 </body>
 </html>
